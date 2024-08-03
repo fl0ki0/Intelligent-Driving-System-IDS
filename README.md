@@ -68,8 +68,12 @@ python analysis_code.py
 - Gratitude to the open-source community for continuous support and contributions.
 
 
-## contributors
-  <!-- readme: contributors -start -->
-<!-- readme: contributors -end -->
+## Contributors
 
+We'd like to acknowledge the following individuals who have contributed to this project:
+
+- **[Osama Hegazy](https://github.com/username)** - Description of contributions.
+- **[Ahmed Qazafy]([https://github.com/another-username](https://github.com/AhmedQazafy))** 
+
+Thank you for your valuable contributions!
 
