@@ -72,7 +72,7 @@ python analysis_code.py
 
 We'd like to acknowledge the following individuals who have contributed to this project:
 
-- **[Osama Hegazy](https://github.com/username)** 
+- **[Osama Hegazy](https://github.com/system2001)** 
   
 - **[Ahmed Qazafy](https://github.com/AhmedQazafy)** 
 
