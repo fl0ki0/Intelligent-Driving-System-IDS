@@ -30,18 +30,6 @@ IDS/
 ├── requirements.txt
 └── LICENSE
 ```
-## Installation
-1. Clone the repository:
-
-git clone https://github.com/your_username/Intelligent-Driving-System.git
-
-2. Navigate to the project directory:
-
-cd Intelligent-Driving-System
-
-3. Install the required dependencies:
-
-pip install -r requirements.txt
 
 
 ## Usage
