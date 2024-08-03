@@ -74,7 +74,7 @@ We'd like to acknowledge the following individuals who have contributed to this 
 
 - **[Osama Hegazy](https://github.com/username)** 
   
-- **[hmed Qazafy](https://github.com/bob)** 
+- **[Ahmed Qazafy](https://github.com/AhmedQazafy)** 
 
 Thank you for your valuable contributions!
 
