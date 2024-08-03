@@ -72,9 +72,9 @@ python analysis_code.py
 
 We'd like to acknowledge the following individuals who have contributed to this project:
 
-- **[Osama Hegazy](https://github.com/username)** - Description of contributions.
+- **[Osama Hegazy](https://github.com/username)** 
   
-- **[Ahmed Qazafy]([https://github.com/another-username](https://github.com/AhmedQazafy))** 
+- **[hmed Qazafy](https://github.com/bob)** 
 
 Thank you for your valuable contributions!
 
