@@ -22,8 +22,7 @@ IDS/
 │   ├── data_analysis/
 │   │   └── analysis_code.py
 │   ├── mobile_app/
-│   │   ├── app_code.py
-│   │   └── a9g_module_code.py
+│   │   ├── coming sooooon
 ├── docs/
 │   ├── IDS_Book.pdf
 │   ├── IDS_Presentation.pdf
