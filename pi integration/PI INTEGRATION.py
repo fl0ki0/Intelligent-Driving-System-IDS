@@ -43,7 +43,7 @@ def check_for_termination_flag():
 current_time = datetime.datetime.now()
 # Firebase project ID
 PROJECT_ID = "driver-live-j61jka"
-SERVICE_ACCOUNT_KEY_PATH = "/home/pi/Downloads/driver-live-j61jka-firebase-adminsdk-1t6a9-2e42f12e8b.json"
+SERVICE_ACCOUNT_KEY_PATH = "/home/pi/Downloads/driver-live-j61jka-firebase-<some auth key>.json"
 
 def get_firestore_client():
     # Initialize Firestore client with service account credentials
@@ -147,7 +147,7 @@ def append_data_to_csv(time, blink_count, yawn_count, drowsiness_count, outof_fr
         
 initialize_csv_file()
 # Model loading
-model = pickle.load(open('./model.pkl', 'rb'))
+model = pickle.load(open('./testingposemodel.pkl', 'rb'))
 cols = []
 for pos in ['nose_', 'forehead_', 'left_eye_', 'mouth_left_', 'chin_', 'right_eye_', 'mouth_right_']:
     for dim in ('x', 'y'):
@@ -244,24 +244,6 @@ def normalize(poses_df):
     
     return normalized_df
 
-def draw_axes(frame, pitch, yaw, roll, tx, ty, size=50):
-    yaw = -yaw  # Inverting yaw for correct visualization
-    rotation_matrix = cv.Rodrigues(np.array([pitch, yaw, roll]))[0].astype(np.float64)
-    axes_points = np.array([
-        [1, 0, 0, 0],
-        [0, 1, 0, 0],
-        [0, 0, 1, 0]
-    ], dtype=np.float64)
-    axes_points = rotation_matrix @ axes_points
-    axes_points = (axes_points[:2, :] * size).astype(int)
-    axes_points[0, :] = axes_points[0, :] + tx
-    axes_points[1, :] = axes_points[1, :] + ty
-    
-    new_img = frame.copy()
-    cv.line(new_img, tuple(axes_points[:, 3].ravel()), tuple(axes_points[:, 0].ravel()), (255, 0, 0), 1)    
-    cv.line(new_img, tuple(axes_points[:, 3].ravel()), tuple(axes_points[:, 1].ravel()), (255, 0, 0), 1)    
-    cv.line(new_img, tuple(axes_points[:, 3].ravel()), tuple(axes_points[:, 2].ravel()), (255, 0, 0), 1)
-    return new_img
 
 def open_len(arr):
     y_arr = [y for _, y in arr]
